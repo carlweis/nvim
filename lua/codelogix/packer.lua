@@ -8,6 +8,13 @@ return require('packer').startup(function(use)
   use 'wbthomason/packer.nvim'
 
   -- Colorscheme
+  use 'cocopon/iceberg.vim'
+  use 'vv9k/vim-github-dark'
+  use 'tomasiser/vim-code-dark'
+  use 'nanotech/jellybeans.vim'
+  use 'folke/tokyonight.nvim'
+  use 'doums/darcula'
+
   use({
     'rose-pine/neovim',
     as = 'rose-pine',
@@ -16,7 +23,6 @@ return require('packer').startup(function(use)
       vim.cmd('colorscheme rose-pine')
     end
   })
-  --use 'cocopon/iceberg.vim'
 
   -- Fuzzy Finder
   use {
@@ -59,7 +65,6 @@ return require('packer').startup(function(use)
     }
   }
 
-  -- ROR
   use 'janko-m/vim-test'
   use 'pangloss/vim-javascript'
   use 'pbrisbin/vim-mkdir'
@@ -78,30 +83,32 @@ return require('packer').startup(function(use)
   use 'vim-scripts/tComment'
   use 'ngmy/vim-rubocop'
   use 'thoughtbot/vim-rspec'
-
-  -- Editor
+  use 'christoomey/vim-tmux-runner'
+  use 'christoomey/vim-tmux-navigator'
+  use 'folke/zen-mode.nvim'
+  use 'github/copilot.vim'
   use 'nvim-lualine/lualine.nvim'
 end)
 
 
-  --[[
-  use 'cocopon/iceberg.vim'
-  use('nanotech/jellybeans.vim')
-  use 'folke/tokyonight.nvim'
-  use({
-    'rose-pine/neovim',
-    as = 'rose-pine',
-    config = function()
-      require("rose-pine").setup()
-      vim.cmd('colorscheme rose-pine')
-    end
-  })
-  use({
-    'cocopon/iceberg.vim',
-    as = 'iceberg',
-    config = function()
-      --require("iceberg").setup()
-      vim.cmd('colorscheme iceberg')
-    end
-  })
-  --]]
+--[[
+use 'cocopon/iceberg.vim'
+use('nanotech/jellybeans.vim')
+use 'folke/tokyonight.nvim'
+use({
+  'rose-pine/neovim',
+  as = 'rose-pine',
+  config = function()
+    require("rose-pine").setup()
+    vim.cmd('colorscheme rose-pine')
+  end
+})
+use({
+  'cocopon/iceberg.vim',
+  as = 'iceberg',
+  config = function()
+    --require("iceberg").setup()
+    vim.cmd('colorscheme iceberg')
+  end
+})
+--]]

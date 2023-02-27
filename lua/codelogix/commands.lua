@@ -5,10 +5,10 @@ vim.api.nvim_create_autocmd({ "BufWritePre" }, {
 })
 
 -- set column width for slim/erb/html files
-vim.api.nvim_create_autocmd({ "FileType" }, {
-  pattern = { "slim" },
-  command = [[textwidth=1000]],
-})
+-- vim.api.nvim_create_autocmd({ "FileType" }, {
+--   pattern = { "slim" },
+--   command = [[set textwidth=1000]],
+-- })
 
 -- automatically rebalance windows on vim resize
 vim.api.nvim_create_autocmd({ "VimResized" }, {
