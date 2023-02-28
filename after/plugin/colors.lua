@@ -1,11 +1,11 @@
 function ColorMyPencils(color)
-  color = color or "tokyonight"
+  color = color or "tokyonight-night"
   vim.cmd.colorscheme(color)
 
-  vim.cmd [[
-    hi Normal ctermbg=none guibg=none
-    hi NormalFloat ctermbg=none guibg=none
-  ]]
+  -- vim.cmd [[
+  --   hi Normal ctermbg=none guibg=none
+  --   hi NormalFloat ctermbg=none guibg=none
+  -- ]]
 
   --[[
   --transparent background handled in transparent.lua

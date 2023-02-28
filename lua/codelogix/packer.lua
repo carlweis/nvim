@@ -14,15 +14,24 @@ return require('packer').startup(function(use)
   use 'nanotech/jellybeans.vim'
   use 'folke/tokyonight.nvim'
   use 'doums/darcula'
+  use 'gruvbox-community/gruvbox'
+  use 'scottymoon/vim-twilight'
 
   use({
     'rose-pine/neovim',
     as = 'rose-pine',
     config = function()
       require("rose-pine").setup()
-      vim.cmd('colorscheme rose-pine')
+      --vim.cmd('colorscheme rose-pine')
     end
   })
+
+  -- LuaLine
+
+  use {
+    'nvim-lualine/lualine.nvim',
+    requires = { 'kyazdani42/nvim-web-devicons', opt = true }
+  }
 
   -- Fuzzy Finder
   use {
@@ -87,7 +96,6 @@ return require('packer').startup(function(use)
   use 'christoomey/vim-tmux-navigator'
   use 'folke/zen-mode.nvim'
   use 'github/copilot.vim'
-  use 'nvim-lualine/lualine.nvim'
 end)
 
 
