@@ -16,6 +16,7 @@ return require('packer').startup(function(use)
   use 'doums/darcula'
   use 'gruvbox-community/gruvbox'
   use 'scottymoon/vim-twilight'
+  use 'AlessandroYorba/Alduin'
 
   use({
     'rose-pine/neovim',

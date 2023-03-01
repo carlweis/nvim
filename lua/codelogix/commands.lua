@@ -10,6 +10,26 @@ vim.api.nvim_create_autocmd({ "BufWritePre" }, {
 --   command = [[set textwidth=1000]],
 -- })
 
+vim.api.nvim_command([[
+    augroup ChangeBackgroudColour
+        autocmd colorscheme * :hi normal guibg=#1d1d1d
+    augroup END
+]])
+vim.api.nvim_command([[
+    augroup ChangeStatusLineColour
+        autocmd colorscheme * :hi StatusLine guibg=#1d1d1d
+    augroup END
+]])
+vim.api.nvim_command([[
+    augroup ChangeColorColumnColour
+        autocmd colorscheme * :hi ColorColumn guibg=#252525
+    augroup END
+]])
+vim.api.nvim_command([[
+    augroup ChangeCursorLineColour
+        autocmd colorscheme * :hi CursorLine guibg=#252525
+    augroup END
+]])
 -- automatically rebalance windows on vim resize
 vim.api.nvim_create_autocmd({ "VimResized" }, {
   pattern = { "*" },
