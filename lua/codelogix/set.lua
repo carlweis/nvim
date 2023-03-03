@@ -8,7 +8,6 @@ vim.opt.guicursor = ""
 vim.opt.nu = true
 vim.opt.numberwidth = 4
 vim.opt.relativenumber = true
-vim.opt.cursorline = true
 
 vim.opt.tabstop = 2
 vim.opt.softtabstop = 2
@@ -32,8 +31,10 @@ vim.opt.autowrite = true
 vim.opt.modelines = 0
 vim.opt.modeline= false
 
-vim.opt.hlsearch = true
+vim.opt.hlsearch = false
 vim.opt.incsearch = true
+
+vim.opt.wildignore:append {"*/node_modules/*"}
 
 vim.opt.showmatch = true
 vim.opt.linebreak = true
@@ -43,7 +44,6 @@ vim.opt.backspace = "indent,eol,start"
 
 vim.opt.termguicolors = true
 
---vim.opt.backspacedir = os.getenv("HOME") .. "/.tmp"
 vim.opt.backupdir = os.getenv("HOME") .. "/.tmp"
 
 vim.opt.scrolloff = 8
@@ -52,9 +52,12 @@ vim.opt.isfname:append("@-@")
 
 vim.opt.updatetime = 50
 
-vim.opt.colorcolumn = "80"
+vim.opt.colorcolumn = "" --"80"
 
 vim.opt.tags = "^=.git/tags"
+
+-- Clipboard
+vim.opt.clipboard = "unnamed"
 
 -- Open new split pages to right and bottom
 vim.opt.splitbelow = true
@@ -72,3 +75,6 @@ vim.opt.complete = "kspell"
 
 -- Always use vertical diffs
 vim.opt.diffopt = "vertical"
+
+-- Disable cursorline
+vim.opt.cursorline = false

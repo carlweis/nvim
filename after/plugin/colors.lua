@@ -1,11 +1,13 @@
 function ColorMyPencils(color)
-  color = color or "codedark"
+  color = color or "darcula"
   vim.cmd.colorscheme(color)
+  -- vim.g.material_theme_style = "palenight"
+  -- vim.g.material_terminal_italics = true
 
-  -- vim.cmd [[
-  --   hi Normal ctermbg=none guibg=none
-  --   hi NormalFloat ctermbg=none guibg=none
-  -- ]]
+  vim.cmd [[
+    hi Normal ctermbg=none guibg=none
+    hi NormalFloat ctermbg=none guibg=none
+  ]]
 
   --[[
   --transparent background handled in transparent.lua

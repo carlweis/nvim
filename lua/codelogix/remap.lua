@@ -51,6 +51,9 @@ vim.keymap.set("n", "<leader><leader>", function()
     vim.cmd("so")
 end)
 
+-- Enter Zenmode with <leader>z
+vim.keymap.set("n", "<leader>z", ":ZenMode<CR>")
+
 -- Switch between the last two files
 vim.keymap.set("n", "<leader><leader>", "<C-^>")
 
