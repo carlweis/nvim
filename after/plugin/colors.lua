@@ -1,5 +1,5 @@
 function ColorMyPencils(color)
-  color = color or "darcula"
+  color = color or "hybrid"
   vim.cmd.colorscheme(color)
   -- vim.g.material_theme_style = "palenight"
   -- vim.g.material_terminal_italics = true

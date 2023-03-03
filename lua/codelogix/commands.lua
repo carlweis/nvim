@@ -32,12 +32,12 @@ vim.api.nvim_command([[
 ]])
 vim.api.nvim_command([[
     augroup ChangeStatusLineColour
-        autocmd colorscheme * :hi StatusLine guibg=#252525
+        autocmd colorscheme * :hi StatusLine guibg=#252525 guifg=white
     augroup END
 ]])
 vim.api.nvim_command([[
     augroup ChangeStatusLineNCColour
-        autocmd colorscheme * :hi StatusLineNC guibg=#333333
+        autocmd colorscheme * :hi StatusLineNC guibg=#252525 guifg=#808080
     augroup END
 ]])
 vim.api.nvim_command([[
